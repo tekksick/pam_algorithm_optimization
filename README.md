@@ -1,3 +1,6 @@
-# ml
+# Problem Statement
 
 The Partitioning Around Medoids (PAM) algorithm, a widely-used method for clustering non-Euclidean data, faces a significant challenge due to its high computational complexity, particularly in its second phase involving medoid swapping. This computational overhead limits the algorithm’s scalability and impedes its practical applicability to large-scale datasets. The critical issue is reducing the PAM algorithm’s runtime complexity without compromising the quality of clustering results  by many factors, ensuring that it remains adequate for real-world data analysis tasks. This project aims to address this problem by proposing modifications to the PAM algorithm that enhance its run time while not changing its accuracy by much. We propose modifications to the PAM algorithm that achieve an O(k)-fold speedup in the second (“SWAP”) phase of the algorithm, but will still find the same results as the original PAM algorithm.
+
+# Refernce
+Schubert, E., Rousseeuw, P.J. (2019). Faster k-Medoids Clustering: Improving the PAM, CLARA, and CLARANS Algorithms. In: Amato, G., Gennaro, C., Oria, V., Radovanović , M. (eds) Similarity Search and Applications. SISAP 2019. Lecture Notes in Computer Science(), vol 11807. Springer, Cham. https://doi.org/10.1007/978-3-030-32047-8_16
