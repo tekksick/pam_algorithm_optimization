@@ -39,6 +39,7 @@ def pam(data, k, max_iterations=1000):
 
         # Main loop for FASTPAM1 algorithm
         for _ in range(max_iterations):
+            clusters = assign_clusters(data, medoids)
             # Cache indices to nearest and second nearest medoids
             nearest_medoids = {}
             second_nearest_medoids = {}
@@ -86,7 +87,6 @@ def pam(data, k, max_iterations=1000):
                 break
             medoids.remove(mstar)
             medoids.append(xstar)
-            clusters = assign_clusters(data, medoids)
             td = td + DelTDF
 
         return medoids, clusters
